@@ -8,14 +8,16 @@ function initMap() {
     center: {lat: 41.914858, lng: -88.2043344}
   });
 
-  var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+  //var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+  var image = 'images/flag-01.svg';
 
   var marker = new google.maps.Marker({
     map: map,
     icon: image,
+    label: "B",
     // Define the place with a location, and a query string.
     place: {
-      location: {lat: 41.921982, lng: -88.207515},
+      location: {lat: 41.9221, lng: -88.2063},
       query: 'St Andrews'
 
     },
@@ -29,8 +31,9 @@ function initMap() {
   var holiday_inn = new google.maps.Marker({
     map: map,
     icon: image,
+    label: "C",
     place: {
-      location: {lat: 41.902129, lng: -88.121303},
+      location: {lat: 41.902129, lng: -88.1202},
       query: "Holiday Inn, Carol Stream"
     },
     attribution: {
@@ -42,8 +45,9 @@ function initMap() {
   var pottawatomie_park_loc= new google.maps.Marker({
     map: map,
     icon: image,
+    label: "A",
     place: {
-      location:  {lat: 41.918864, lng: -88.315690},
+      location:  {lat: 41.918864, lng: -88.313580},
       query: 'Pottawatomie Park, St. Charles, IL'
     },
     attribution: {
@@ -60,4 +64,8 @@ function initMap() {
   marker.addListener('click', function() {
     infoWindow.open(map, marker);
   });
+
+  // Add styling to map
+  map.setOptions({styles: map_style});
+
 }
