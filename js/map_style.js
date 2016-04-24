@@ -49,6 +49,15 @@ var map_style = [
     },
     {
         "featureType": "administrative",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
         "elementType": "labels",
         "stylers": [
             {
@@ -114,6 +123,27 @@ var map_style = [
         ]
     },
     {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "lightness": "0"
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
         "featureType": "poi",
         "elementType": "geometry",
         "stylers": [
@@ -132,6 +162,33 @@ var map_style = [
         ]
     },
     {
+        "featureType": "poi.attraction",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.business",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.government",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
         "featureType": "poi.park",
         "elementType": "geometry",
         "stylers": [
@@ -140,6 +197,27 @@ var map_style = [
             },
             {
                 "saturation": -20
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.place_of_worship",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.school",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
             }
         ]
     },
@@ -148,10 +226,7 @@ var map_style = [
         "elementType": "geometry",
         "stylers": [
             {
-                "lightness": 10
-            },
-            {
-                "saturation": -30
+                "color": "#9a5c08"
             }
         ]
     },
@@ -172,16 +247,13 @@ var map_style = [
                 "visibility": "on"
             },
             {
-                "hue": "#ffbe00"
-            },
-            {
                 "gamma": "1.29"
             }
         ]
     },
     {
         "featureType": "road.highway.controlled_access",
-        "elementType": "labels",
+        "elementType": "all",
         "stylers": [
             {
                 "visibility": "off"
@@ -190,16 +262,7 @@ var map_style = [
     },
     {
         "featureType": "road.arterial",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "labels",
+        "elementType": "all",
         "stylers": [
             {
                 "visibility": "simplified"
@@ -208,7 +271,7 @@ var map_style = [
     },
     {
         "featureType": "road.local",
-        "elementType": "geometry.stroke",
+        "elementType": "all",
         "stylers": [
             {
                 "visibility": "off"
@@ -216,11 +279,11 @@ var map_style = [
         ]
     },
     {
-        "featureType": "road.local",
-        "elementType": "labels",
+        "featureType": "transit",
+        "elementType": "all",
         "stylers": [
             {
-                "visibility": "simplified"
+                "visibility": "off"
             }
         ]
     },
